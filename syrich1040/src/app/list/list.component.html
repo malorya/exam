@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row mt-2 text-center">
+    <div class="col-12 col-sm-4 mt-sm-0 mt-2 mx-auto">
+      <button class="btn btn-outline-info w-100" (click)="sortByName(goods, 1)">
+        А - Я
+      </button>
+    </div>
+    <div class="col-12 col-sm-4 mt-sm-0 mt-2 mx-auto">
+      <button class="btn btn-outline-info w-100" (click)="sortByName(goods, 2)">
+        Я - А
+      </button>
+    </div>
+  </div>
+  <div class="row mt-2" *ngFor="let good of goods">
+    <div class="col-12 col-sm-8 mx-auto">
+      <div class="card" [class.bg-success]="!good.status" [class.text-white]="!good.status">
+        <div class="card-body">
+          <h5 class="card-title">{{good.name}}</h5>
+          <h6 class="card-subtitle mb-2">Количество: {{good.amount}}</h6>
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-sm btn-primary mr-2" [routerLink]="['/edit', good.id]">Редактировать</button>
+            <button class="btn btn-sm btn-info mr-2"
+              (click)="changeStatus(good.id)">{{good.status ? 'Не куплено' : 'Куплено'}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

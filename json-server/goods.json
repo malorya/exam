@@ -1,0 +1,28 @@
+{
+  "goods": [
+    {
+      "id": 4,
+      "name": "Банан",
+      "amount": "2",
+      "status": false
+    },
+    {
+      "id": 5,
+      "name": "Абрикос",
+      "amount": "4",
+      "status": false
+    },
+    {
+      "id": 6,
+      "name": "Арбуз",
+      "amount": "3",
+      "status": false
+    },
+    {
+      "id": 8,
+      "name": "Черника",
+      "amount": "500",
+      "status": false
+    }
+  ]
+}

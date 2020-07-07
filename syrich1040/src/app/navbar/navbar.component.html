@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" [routerLink]="'/'">syrich1040</a>
+  <div class="col-12 col-sm-auto text-center">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/'" routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">Информация</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/list'" routerLinkActive="active">Список покупок</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'/add'" routerLinkActive="active">Добавить покупку</a>
+      </li>
+    </ul>
+  </div>
+</nav>
